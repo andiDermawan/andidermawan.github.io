@@ -12,7 +12,7 @@ Feel free to dive into any project that piques your interest. Every repository h
 ## Connect with Me
 I love connecting with fellow enthusiasts, creators, and potential collaborators. Reach out to me through the following channels:
 - 📧 Email: andidermawan2106@gmail.com
-- 🌐 Website: andidermawan.github.io
+- 🌐 Website: https://andidermawan.github.io
 
 ## Let's Collaborate
 If you're interested in collaborating on a project, discussing opportunities, or simply have a chat about technology, innovation, or anything under the sun, don't hesitate to get in touch. I'm always open to new adventures and meaningful connections.
