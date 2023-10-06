@@ -6,11 +6,6 @@ Hey there, I'm Andi Dermawan! 👋 I'm a passionate Programmer with a knack for 
 ## Portfolio Showcase
 In this digital realm, you'll find a curated collection of my most significant achievements, ambitious projects, and a glimpse into my evolving skills. Each project here tells a story, a chapter in my journey of growth and exploration.
 
-// ## What You'll Discover
-// - **[Project Name]**: [Brief Description]
-// - **[Project Name]**: [Brief Description]
-// - **[Project Name]**: [Brief Description]
-
 ## How to Explore
 Feel free to dive into any project that piques your interest. Every repository here is a testament to my dedication, creativity, and my constant pursuit of excellence. You can find detailed READMEs, code, and documentation for each project, helping you understand the thought process, technologies used, and the impact created.
 
