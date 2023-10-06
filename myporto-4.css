@@ -1,0 +1,164 @@
+:root {
+    --white: #EBF0F3;
+    --sky: #87CEFA;
+    --first-water: #40B3DB;
+    --second-water: #319FBC;
+    --third-water: #2690A8;
+    --sand: #FFCE54;
+    --footer: #C87F00;
+    ---author: #674200;
+}
+
+/* header starts */
+header {
+    background-color: var(--sky) !important;
+    /* background-color: transparent; */
+}
+
+.navbar-brand {
+    font-family: 'Righteous', cursive;
+    color: var(--third-water) !important;
+}
+
+nav button {
+    background-color: var(--white) !important;
+}
+
+nav button div {
+    width: 30px;
+    height: 4px;
+    background-color: var(--sky) !important;
+}
+
+nav div.offcanvas {
+    background-color: var(--sky) !important;
+}
+
+nav li a {
+    color: var(--third-water) !important;
+}
+
+nav li a.active {
+    color: var(--white) !important;
+}
+
+nav li:hover a {
+    color: var(--white) !important;
+}
+/* header ends */
+
+/* main > hero starts */
+#hero {
+    padding-top: 5rem;
+    background-color: var(--sky);
+}
+
+#hero .card {
+    background-color: inherit;
+}
+
+/* #hero .card-title {
+    margin-top: 10%;
+} */
+
+#hero .card-text span {
+    color: var(--white);
+}
+
+#hero .quote {
+    background-color: var(--first-water);
+}
+
+#hero .quote {
+    padding: 9rem 0 8rem 0;
+    color: var(--third-water);
+}
+/* main > hero ends */
+
+/* main > about starts */
+#about {
+    background-color: var(--first-water);
+    padding: 9rem 0 8rem 0;
+}
+
+#about .lead {
+    color: var(--white);
+}
+
+#about .profile {
+    background-color: var(--sky);
+    border: 2px solid var(--second-water);
+    padding: 4rem 0;
+}
+
+#about img {
+    width: 12rem;
+    background-color: var(--second-water);
+    border: 2px solid var(--second-water);
+    /* box-shadow: 0px 5px 10px rgb(0, 0, 0, .3); */
+    box-shadow: 0 5px 3px rgba(0, 24, 64, 0.2);
+}
+
+#about .card-body {
+    color: var(--white);
+    background-color: var(--second-water);
+}
+/* main > about ends */
+
+/* main > skills starts */
+#skills {
+    background-color: var(--second-water);
+    padding: 9rem 0 8rem 0;
+    color: var(--white);
+}
+
+#skills .col > div {
+    background-color: var(--first-water);
+}
+
+#skills button {
+    background-color: var(--sky);
+    color: var(--white);
+}
+
+#skills button:hover {
+    box-shadow: 0 5px 0 rgba(0, 24, 64, 0.2);
+}
+/* main > skills ends */
+
+/* main > contact starts */
+#contact {
+    background-color: var(--third-water);
+    color: var(--white);
+    padding: 9rem 0 8rem 0;
+}
+
+#contact button {
+    background-color: var(--sky);
+    color: var(--white);
+}
+
+#contact button:hover {
+    box-shadow: 0 5px 0 rgba(0, 24, 64, 0.2);
+}
+/* main > contact ends */
+
+/* footer starts */
+footer img {
+    background-color: var(--third-water) !important;
+}
+
+footer div {
+    background-color: var(--sand);
+    color: var(--footer);
+}
+
+footer a {
+    color: var(---author);
+    font-weight: bolder;
+}
+
+footer a:hover {
+    color: var(--footer);
+}
+/* footer ends */
