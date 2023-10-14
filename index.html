@@ -7,10 +7,11 @@
     <title>What a Beautiful Day !</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./myporto-4.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Righteous&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
@@ -18,7 +19,7 @@
 
     <header class="sticky-top">
         <nav id="navbar" class="navbar navbar-expand-md">
-            <div class="container-fluid py-2 px-5">
+            <div class="container-fluid py-2 px-4">
                 <a href="#" class="navbar-brand fs-4">andidermawan</a>
                 <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#hamburger">
@@ -51,21 +52,15 @@
         </nav>
     </header>
     <main data-bs-spy="scroll" data-bs-target="#navbar">
-        <section id="hero">
-            <div class="card rounded-0 border-0">
-                <img src="./img/mointain & sea.svg" alt="Look at the Mountain !"
-                    class="img-fluid card-img w-100 rounded-0">
-                <div class="card-img-overlay">
-                    <div class="hero-text h-75 w-50 ms-auto d-flex flex-column">
-                        <h1 class="card-title fw-bolder text-dark">
-                            Hello, My name is Andi Dermawan
-                        </h1>
-                        <div class="card-text text-dark">
-                            I'm a <span>programmer</span> and now i'm learning how to design a website nicely !
-                        </div>
-                    </div>
-                </div>
+        <section id="hero" class="position-relative">
+            <div class="hero-text position-absolute end-0 px-5">
+                <h1 class="fw-bolder text-dark">
+                    Hello, My name is <span>Andi Dermawan</span>
+                </h1>
+                <p class="text-dark">I'm a <span>programmer</span> and now i'm learning how to design a website nicely !
+                </p>
             </div>
+            <img src="./img/mointain & sea.svg" alt="Look at the Mountain !" class="img-fluid card-img w-100 rounded-0">
             <div class="quote text-center">
                 <div class="container">
                     <q class="fw-bolder fs-5">
@@ -79,21 +74,19 @@
         <section id="about" class="text-center">
             <div class="container d-flex flex-column align-items-center">
                 <div class="lead fw-bolder mb-5">About Me</div>
-                <div class="card p-0 border-0">
-                    <div class="profile rounded-top border-bottom-0">
-                        <img src="./img/sandhika.png" alt="Me" class="rounded-circle">
-                    </div>
-                    <div class="card-body rounded-bottom border-top-0 p-5">
-                        <div class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veritatis atque doloribus
-                            tempora corporis magni! Autem nulla assumenda debitis velit ullam possimus rem deserunt ad
-                            neque
-                            nisi, corrupti sunt libero hic provident doloremque quibusdam est voluptas non repellendus
-                            nemo
-                            numquam!
-                        </div>
-                    </div>
-                </div>
+                <img src="./img/sandhika.png" alt="Me" class="rounded-circle">
+                <p class="mt-4">Hello there, I'm Andi Dermawan, a passionate programmer with a penchant for crafting
+                    digital wonders. My name resonates with the rhythms of Python, PHP, JavaScript, Bootstrap, C++, and
+                    Java, allowing me to navigate the intricate realms of coding with finesse and dexterity. With each
+                    keystroke, I weave intricate algorithms that breathe life into the virtual landscapes, adding layers
+                    of functionality and elegance. Currently, I am on an enthralling journey, delving into the art of
+                    designing exquisite websites. As
+                    I immerse myself in the nuances of web design, I strive to blend the art of programming with the
+                    finesse of aesthetics, creating digital symphonies that enchant and captivate the beholder. With a
+                    fervent dedication to my craft, I aspire to shape digital experiences that transcend
+                    boundaries, inviting users to embark on immersive journeys through seamless interfaces and
+                    captivating visuals. Join me as I continue to paint the digital canvas with the vibrant hues of
+                    creativity and the precision of coding expertise.</p>
             </div>
         </section>
         <section id="skills" class="text-center">
@@ -101,7 +94,7 @@
                 <div class="lead mb-5 fw-bolder">My Skills</div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="programming position-relative p-4">
+                        <div class="position-relative p-4">
                             <img src="./img/border-corner-1.svg" alt="border-corner"
                                 class="position-absolute top-0 start-0">
                             <img src="./img/border-corner-3.svg" alt="border-corner"
@@ -110,19 +103,58 @@
                                 class="position-absolute bottom-0 start-0">
                             <img src="./img/border-corner.svg" alt="border-corner"
                                 class="position-absolute bottom-0 end-0">
-                            <div class="lead fw-bolder mb-3">What language I speak ?</div>
+                            <div class="lead fw-bolder mb-3">Front End Developer</div>
                             <ul class="text-start">
-                                <li>Python</li>
-                                <li>PHP</li>
+                                <li>Bootstrap</li>
                                 <li>Javascript</li>
-                                <li>C++</li>
-                                <li>Java</li>
                             </ul>
-                            <button type="button" class="btn fw-bolder">Read more</button>
+                            <button type="button" class="btn fw-bolder" data-bs-toggle="modal"
+                                data-bs-target="#front-end">Read more</button>
+                            <div id="front-end" class="modal fade">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title text-dark">Front End Developer</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body text-dark text-start">
+                                            <h5 class="text-center">Bootstrap</h5>
+                                            <p>I am a skilled web developer with considerable expertise in utilizing the
+                                                Bootstrap framework. With a strong command of HTML, CSS, and JavaScript,
+                                                I have successfully implemented Bootstrap's components and
+                                                functionalities to create visually appealing and responsive websites.
+                                                Through my hands-on experience, I have adeptly utilized Bootstrap's grid
+                                                system, CSS classes, and JavaScript plugins to develop user-friendly and
+                                                modern web interfaces.</p>
+                                            <p>I take pride in my ability to customize Bootstrap's features to meet the
+                                                specific design and functionality requirements of diverse projects. My
+                                                in-depth understanding of responsive design principles has enabled me to
+                                                ensure seamless user experiences across various devices and screen
+                                                sizes. Leveraging my problem-solving skills, I have effectively overcome
+                                                complex challenges, demonstrating a high level of adaptability and
+                                                proficiency in leveraging Bootstrap to its full potential.</p>
+                                            <br>
+                                            <h5 class="text-center">Javascript</h5>
+                                            <p>I am a seasoned JavaScript developer with a strong command of the
+                                                language. With an extensive hands-on experience, I have adeptly
+                                                implemented complex and innovative JavaScript scripts to create engaging
+                                                interactive functionalities in web development. Proficient in leveraging
+                                                modern JavaScript frameworks and best practices, I am skilled at
+                                                delivering efficient and effective solutions.</p>
+                                            <p>My robust understanding of fundamental JavaScript concepts, such as DOM
+                                                manipulation, asynchronous programming, and modular programming, enables
+                                                me to develop responsive and dynamic web applications. I have a solid
+                                                background in integrating APIs and other related technologies, extending
+                                                JavaScript's capabilities to create rich and satisfying user
+                                                experiences.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="programming position-relative p-4">
+                        <div class="position-relative p-4">
                             <img src="./img/border-corner-1.svg" alt="border-corner"
                                 class="position-absolute top-0 start-0">
                             <img src="./img/border-corner-3.svg" alt="border-corner"
@@ -131,19 +163,186 @@
                                 class="position-absolute bottom-0 start-0">
                             <img src="./img/border-corner.svg" alt="border-corner"
                                 class="position-absolute bottom-0 end-0">
-                            <div class="lead fw-bolder mb-3">What language I speak ?</div>
+                            <div class="lead fw-bolder mb-3">Back End Developer</div>
                             <ul class="text-start">
-                                <li>Python</li>
                                 <li>PHP</li>
-                                <li>Javascript</li>
+                                <li>Python</li>
                                 <li>C++</li>
                                 <li>Java</li>
+                                <li>MySQL</li>
                             </ul>
-                            <button type="button" class="btn fw-bolder">Read more</button>
+                            <button type="button" class="btn fw-bolder" data-bs-toggle="modal"
+                                data-bs-target="#back-end">Read more</button>
+                            <div id="back-end" class="modal fade">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title text-dark">Back End Developer</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body text-dark text-start">
+                                            <h5 class="text-center">PHP</h5>
+                                            <p>I am a proficient PHP developer with a substantial grasp of the language.
+                                                Through my extensive experience, I have successfully crafted robust and
+                                                dynamic web applications, leveraging PHP's versatility and powerful
+                                                features. Proficient in utilizing PHP frameworks and libraries, I have
+                                                adeptly designed and implemented scalable solutions to address complex
+                                                business needs.</p>
+
+                                            <p>With a comprehensive understanding of PHP's object-oriented programming
+                                                principles and database integration, I have successfully developed
+                                                efficient
+                                                and secure backend functionalities for various projects. My expertise in
+                                                building custom APIs and integrating third-party services has enabled me
+                                                to
+                                                create seamless and integrated web solutions that meet the highest
+                                                standards
+                                                of performance and security.</p>
+
+                                            <p>I take pride in my ability to troubleshoot and debug complex PHP code,
+                                                ensuring the smooth functioning of web applications even under high
+                                                traffic.
+                                                Additionally, my commitment to staying updated with the latest PHP
+                                                trends
+                                                and best practices has enabled me to continuously deliver high-quality
+                                                and
+                                                efficient solutions for diverse client requirements.</p>
+                                            <br>
+                                            <h5 class="text-center">Python</h5>
+                                            <p>I have honed my skills in Python programming to an advanced level,
+                                                proficiently leveraging its versatile features and libraries to develop
+                                                robust and efficient solutions. Through my extensive experience, I have
+                                                effectively applied Python in diverse projects, ranging from data
+                                                analysis and machine learning to web development and automation.</p>
+
+                                            <p>My expertise encompasses a deep understanding of Python's fundamental
+                                                concepts, including data structures, algorithms, and object-oriented
+                                                programming (OOP) principles. This knowledge has empowered me to
+                                                architect scalable and optimized solutions, ensuring seamless
+                                                integration with various technologies and frameworks.</p>
+
+                                            <p>Furthermore, my adeptness with popular Python libraries, such as NumPy,
+                                                Pandas, and Scikit-learn, has enabled me to extract meaningful insights
+                                                from complex datasets, build predictive models, and implement
+                                                sophisticated data-driven strategies. I have also utilized Django and
+                                                Flask frameworks to develop robust web applications, demonstrating a
+                                                comprehensive understanding of back-end development and RESTful API
+                                                integration.</p>
+
+                                            <p>My dedication to writing clean, efficient, and maintainable code is
+                                                reflected in my ability to deliver elegant and scalable solutions that
+                                                adhere to industry best practices. I am continuously expanding my Python
+                                                proficiency, staying updated with the latest advancements and trends
+                                                within the Python ecosystem to ensure the delivery of cutting-edge
+                                                solutions that meet the dynamic demands of modern technology.</p>
+                                            <br>
+                                            <h5 class="text-center">C++</h5>
+                                            <p>I have acquired a high level of expertise in utilizing the C++
+                                                programming language, having honed my skills through hands-on experience
+                                                and in-depth knowledge of its intricacies. My proficiency in C++ extends
+                                                to its core concepts, including object-oriented programming (OOP)
+                                                principles, data structures, and algorithmic implementations.</p>
+
+                                            <p>Through my extensive exposure to C++, I have successfully engineered
+                                                efficient and robust solutions, tackling complex programming challenges
+                                                and
+                                                optimizing performance in various software development projects. My
+                                                familiarity with C++'s memory management and low-level manipulation
+                                                capabilities has empowered me to develop resource-efficient
+                                                applications,
+                                                particularly in domains where performance and optimization are critical.
+                                            </p>
+
+                                            <p>Moreover, I have demonstrated my proficiency in leveraging C++ for
+                                                system-level programming, embedded systems, game development, and
+                                                high-performance computing applications. My ability to implement
+                                                intricate
+                                                algorithms and optimize code for speed and memory usage has been
+                                                instrumental in delivering high-quality, scalable, and reliable software
+                                                solutions.</p>
+
+                                            <p>I am committed to writing clean, well-documented, and maintainable code,
+                                                adhering to industry best practices and standards. My dedication to
+                                                staying
+                                                updated with the latest advancements in the C++ ecosystem ensures that
+                                                my
+                                                solutions align with contemporary software development trends and
+                                                requirements.</p>
+                                            <br>
+                                            <h5 class="text-center">Java</h5>
+                                            <p>I have developed a strong proficiency in utilizing the Java programming
+                                                language, backed by extensive hands-on experience and a comprehensive
+                                                understanding of its key concepts and features. My expertise in Java
+                                                spans across various domains, including enterprise application
+                                                development, Android app development, and web development.</p>
+
+                                            <p>Through my journey with Java, I have successfully designed and
+                                                implemented scalable and robust applications, leveraging its
+                                                object-oriented programming (OOP) principles, multi-threading
+                                                capabilities, and rich standard library. I have a proven track record of
+                                                delivering efficient and reliable solutions, emphasizing code
+                                                reusability and maintainability.</p>
+
+                                            <p>Additionally, my proficiency extends to Java frameworks and tools,
+                                                including Spring, Hibernate, and Maven, enabling me to build scalable
+                                                and high-performance enterprise solutions. I have demonstrated my
+                                                ability to integrate complex systems, optimize application performance,
+                                                and ensure data security through meticulous coding practices and
+                                                adherence to industry best practices.</p>
+
+                                            <p>Furthermore, my experience in Java Android development has allowed me to
+                                                contribute to the creation of engaging and user-friendly mobile
+                                                applications, catering to diverse user requirements and adhering to the
+                                                latest design and development standards.</p>
+
+                                            <p>I am dedicated to producing clean, well-documented, and efficient code,
+                                                ensuring that my solutions are not only robust and functional but also
+                                                easily maintainable by other team members. My commitment to continuous
+                                                learning and keeping abreast of the latest advancements in the Java
+                                                ecosystem enables me to deliver cutting-edge solutions that align with
+                                                contemporary software development trends and requirements.</p>
+                                            <br>
+                                            <h5 class="text-center">MySQL</h5>
+                                            <p>I have cultivated a strong expertise in utilizing the MySQL programming
+                                                language, underpinned by an extensive understanding of its relational
+                                                database management system (RDBMS) and its applications in various
+                                                software development projects. My proficiency in MySQL spans across
+                                                designing, querying, and managing complex databases, enabling efficient
+                                                data storage and retrieval for diverse applications.</p>
+
+                                            <p>Through my experience with MySQL, I have effectively designed and
+                                                implemented robust database architectures, optimizing query performance
+                                                and ensuring data integrity. I am well-versed in creating and managing
+                                                intricate database structures, implementing efficient indexing
+                                                strategies, and ensuring optimal database performance through meticulous
+                                                query optimization techniques.</p>
+
+                                            <p>Furthermore, my expertise in MySQL includes proficiency in stored
+                                                procedures, triggers, and views, enabling me to streamline data
+                                                processing and enhance the overall functionality of database-driven
+                                                applications. I have successfully implemented secure and scalable
+                                                database solutions, adhering to industry best practices and standards to
+                                                ensure data security and integrity.</p>
+
+                                            <p>Moreover, my comprehensive understanding of SQL (Structured Query
+                                                Language) has empowered me to extract, manipulate, and analyze complex
+                                                datasets, facilitating data-driven decision-making processes and
+                                                enabling the extraction of valuable insights from large datasets.</p>
+
+                                            <p>I am dedicated to maintaining clean, well-documented, and efficient
+                                                database structures, ensuring that they meet the specific requirements
+                                                of the applications they serve. My commitment to staying updated with
+                                                the latest advancements in MySQL technology enables me to deliver
+                                                innovative solutions that align with contemporary data management trends
+                                                and industry requirements.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="programming position-relative p-4">
+                        <div class="position-relative p-4">
                             <img src="./img/border-corner-1.svg" alt="border-corner"
                                 class="position-absolute top-0 start-0">
                             <img src="./img/border-corner-3.svg" alt="border-corner"
@@ -152,15 +351,63 @@
                                 class="position-absolute bottom-0 start-0">
                             <img src="./img/border-corner.svg" alt="border-corner"
                                 class="position-absolute bottom-0 end-0">
-                            <div class="lead fw-bolder mb-3">What language I speak ?</div>
+                            <div class="lead fw-bolder mb-3">UI/UX Designer</div>
                             <ul class="text-start">
-                                <li>Python</li>
-                                <li>PHP</li>
-                                <li>Javascript</li>
-                                <li>C++</li>
-                                <li>Java</li>
+                                <li>Figma</li>
                             </ul>
-                            <button type="button" class="btn fw-bolder">Read more</button>
+                            <button type="button" class="btn fw-bolder" data-bs-toggle="modal"
+                                data-bs-target="#design">Read more</button>
+                            <div id="design" class="modal fade">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title text-dark">UI/UX Designer</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body text-dark text-start">
+                                            <h5 class="text-center">Figma</h5>
+                                            <p>I have honed my skills in utilizing Figma to craft visually appealing and
+                                                user-centric UI/UX designs, underpinned by a comprehensive understanding
+                                                of
+                                                design principles and a keen eye for detail. My proficiency in Figma
+                                                allows
+                                                me to seamlessly translate conceptual ideas into engaging and intuitive
+                                                user
+                                                interfaces, ensuring a seamless and enjoyable user experience.</p>
+
+                                            <p>Through my extensive experience with Figma, I have successfully designed
+                                                and
+                                                prototyped intricate user interfaces, leveraging Figma's collaborative
+                                                features to facilitate efficient communication and feedback within
+                                                cross-functional teams. I am well-versed in creating responsive designs
+                                                that
+                                                cater to diverse device resolutions and screen sizes, ensuring
+                                                consistent
+                                                and intuitive user experiences across various platforms.</p>
+
+                                            <p>Moreover, my expertise in leveraging Figma's interactive prototyping
+                                                capabilities has enabled me to create immersive and interactive user
+                                                experiences, providing stakeholders and clients with a tangible vision
+                                                of
+                                                the final product. I have demonstrated my ability to incorporate user
+                                                feedback and usability testing results into the design process,
+                                                iteratively
+                                                refining UI/UX solutions to meet evolving user needs and preferences.
+                                            </p>
+
+                                            <p>Additionally, my dedication to staying updated with the latest design
+                                                trends
+                                                and best practices empowers me to deliver contemporary and aesthetically
+                                                pleasing designs that resonate with target audiences. I am committed to
+                                                maintaining a balance between aesthetic appeal and functional
+                                                efficiency,
+                                                ensuring that the designs I create not only look appealing but also
+                                                offer
+                                                seamless navigation and intuitive interactions for end-users.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,20 +417,26 @@
             <div class="container">
                 <div class="lead text-center mb-5 fw-bolder">Contact Me</div>
                 <div class="row justify-content-center">
-                    <form class="col-md-9 px-4">
+                    <form class="col-md-9 px-4" name="contact-form">
+                        <div id="alertMessage"></div>
                         <div class="mb-4">
                             <label for="name" class="form-label">Name :</label>
-                            <input type="text" id="name" class="form-control" placeholder="Your Name">
+                            <input type="text" id="name" class="form-control shadow-none border-0"
+                                placeholder="your name" name="name" required>
                         </div>
                         <div class="mb-4">
                             <label for="email" class="form-label">Email :</label>
-                            <input type="text" id="email" class="form-control" placeholder="your-email@gmail.com">
+                            <input type="text" id="email" class="form-control shadow-none border-0"
+                                placeholder="youremail@gmail.com" name="email" required>
                         </div>
-                        <div class="mb-4">
-                            <label for="massage" class="form-label">Massage :</label>
-                            <textarea id="massage" rows="5" class="form-control"
-                                placeholder="Can we collab with you ?"></textarea></div>
-                        <button type="submit" class="btn fw-bolder">Submit</button>
+                        <div class=" mb-4">
+                            <label for="massage" class="form-label">Message :</label>
+                            <textarea id="massage" rows="5" class="form-control shadow-none border-0"
+                                placeholder="Let's goooooo !" name="message" required></textarea></div>
+                        <button id="alertBtn" type="submit" class="btn fw-bolder">
+                            <span>Submit</span>
+                            <span class="spinner-grow spinner-grow-sm d-none"></span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -199,6 +452,48 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+    <script>
+        const alertMessage = document.getElementById('alertMessage')
+        const btn = document.getElementById('alertBtn')
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbwezbj-Yj-vIsB4gW_b66_XKpIh6jTzgz2qe8m0fx7tVMcL4h8ZfETGzL0omjGnyTJmkw/exec'
+        const form = document.forms['contact-form']
+        const spinner = document.querySelector(".spinner-grow")
+
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertMessage.append(wrapper)
+        }
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            alertBtn.classList.toggle("disabled")
+            spinner.classList.toggle("d-none")
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    alertBtn.classList.toggle("disabled")
+                    spinner.classList.toggle("d-none")
+                    appendAlert('The Message landed successfuly!', 'success')
+                    form.reset()
+                })
+                .catch(error => {
+                    alertBtn.classList.toggle("disabled")
+                    spinner.classList.toggle("d-none")
+                    appendAlert(error.message, 'danger')
+                })
+        })
     </script>
 </body>
 
