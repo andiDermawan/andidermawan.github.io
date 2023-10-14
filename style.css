@@ -9,14 +9,17 @@
     ---author: #674200;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* header starts */
 header {
     background-color: var(--sky) !important;
-    /* background-color: transparent; */
 }
 
 .navbar-brand {
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', sans-serif;
     color: var(--third-water) !important;
 }
 
@@ -53,16 +56,9 @@ nav li:hover a {
     background-color: var(--sky);
 }
 
-#hero .card {
-    background-color: inherit;
-}
-
-/* #hero .card-title {
-    margin-top: 10%;
-} */
-
-#hero .card-text span {
-    color: var(--white);
+#hero .hero-text span {
+    color: white;
+    mix-blend-mode: difference;
 }
 
 #hero .quote {
@@ -99,9 +95,8 @@ nav li:hover a {
     box-shadow: 0 5px 3px rgba(0, 24, 64, 0.2);
 }
 
-#about .card-body {
+#about p {
     color: var(--white);
-    background-color: var(--second-water);
 }
 /* main > about ends */
 
@@ -112,17 +107,29 @@ nav li:hover a {
     color: var(--white);
 }
 
-#skills .col > div {
+#skills .col>div {
     background-color: var(--first-water);
 }
 
-#skills button {
+#skills button.fw-bolder {
     background-color: var(--sky);
     color: var(--white);
 }
 
-#skills button:hover {
+#skills button.fw-bolder:hover {
     box-shadow: 0 5px 0 rgba(0, 24, 64, 0.2);
+}
+
+#skills .modal-content {
+    background-color: var(--sky);
+}
+
+#skills .modal-title, #skills .modal-body p {
+    color: var(--third-water) !important;
+}
+
+#skills .modal-body h5 {
+    color: var(--white) !important;
 }
 /* main > skills ends */
 
@@ -133,12 +140,17 @@ nav li:hover a {
     padding: 9rem 0 8rem 0;
 }
 
-#contact button {
+#contact input:focus,
+#contact textarea:focus {
+    box-shadow: 0 0 0 4px var(--sky) !important;
+}
+
+#contact #alertBtn {
     background-color: var(--sky);
     color: var(--white);
 }
 
-#contact button:hover {
+#contact #alertBtn:hover {
     box-shadow: 0 5px 0 rgba(0, 24, 64, 0.2);
 }
 /* main > contact ends */
