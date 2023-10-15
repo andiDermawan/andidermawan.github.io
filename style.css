@@ -57,8 +57,7 @@ nav li:hover a {
 }
 
 #hero .hero-text span {
-    color: white;
-    mix-blend-mode: difference;
+    color: var(--white);
 }
 
 #hero .quote {
@@ -91,7 +90,6 @@ nav li:hover a {
     width: 12rem;
     background-color: var(--second-water);
     border: 2px solid var(--second-water);
-    /* box-shadow: 0px 5px 10px rgb(0, 0, 0, .3); */
     box-shadow: 0 5px 3px rgba(0, 24, 64, 0.2);
 }
 
